@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) ,
+    url(photo1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    width:100vw;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+.menu a:hover{
+    color: white;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    border-bottom: 2px solid red;
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:red;
+    border-radius:8px;
+    transition: 0.4s;
+
+
+}
+.register a:hover{
+    background: transparent;
+    border:1px solid red ;
+    color: white;
+}
+.h-txt{
+    max-width:650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.h-txt span{
+    letter-spacing: 5px;
+}
+.h-txt{
+    font-size: 3.5rem;
+}
+.h-txt a{
+    text-decoration: none;
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    transition: 0.4s;
+
+}
+.h-txt a:hover{
+    background: transparent;
+    border:1px solid red ;
+    color: white;
+}
+
+
+
